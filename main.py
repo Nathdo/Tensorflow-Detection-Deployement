@@ -19,9 +19,9 @@ st.markdown("### Or try with a sample image:")
 
 col1, col2, col3 = st.columns(3)
 sample_paths = {
-    "Healthy Leaf": "app/Images/healthy.png",
-    "Black Rot": "app/Images/test1.jpg",
-    "Apple Scab": "app/Images/test2.jpg"
+    "Healthy Leaf": "Images/healthy.png",
+    "Black Rot": "Images/test1.jpg",
+    "Apple Scab": "Images/test2.jpg"
 }
 
 with col1:
@@ -40,8 +40,6 @@ with col3:
 
 # --- Process and predict if file is uploaded or selected ---
 if selected_file:
-    st.divider()
-    st.success("✅ File loaded successfully!")
     st.divider()
 
     def preprocessing(uploaded_file):
