@@ -11,7 +11,7 @@ This project is a lightweight, production-ready web application for detecting di
 
 ## App Preview
 
-![App Screenshot](./Images/test1.png)
+![App Screenshot](./Images/SITE.png)
 
 ## How It Works
 
