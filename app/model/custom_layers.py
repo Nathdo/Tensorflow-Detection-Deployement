@@ -4,7 +4,6 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 
 @register_keras_serializable()
-@register_keras_serializable()
 class Avg2MaxPooling(layers.Layer):
     def __init__(self, pool_size=3, strides=2, padding='same', **kwargs):
         super().__init__(**kwargs)
@@ -27,8 +26,6 @@ class Avg2MaxPooling(layers.Layer):
             "padding": self.padding
         })
         return config
-
-
 
 @register_keras_serializable()
 class SEBlock(layers.Layer):
